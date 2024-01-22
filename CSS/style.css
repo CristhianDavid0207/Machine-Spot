@@ -1,0 +1,28 @@
+/*Barra de Navegación  */
+.navbar {
+    padding: 1rem;
+    background-color: #fff;
+    animation: fadeIn 1.5s ease;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+}
+
+.navbar-collapse .navbar-brand{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50px;
+    background-color: #1b1b32;
+    transition: background-color 0.9s, box-shadow 0.6s, border-radius 0.8s;
+} 
+
+.navbar-collapse .navbar-brand:hover {
+    background-color: #1b1b32;
+    border-radius: 50px;
+    box-shadow: 0 0 300px rgba(255, 255, 255, 1);
+    transition: background-color 0.7s, box-shadow 0.6s, border-radius 0.8s; 
+} 
