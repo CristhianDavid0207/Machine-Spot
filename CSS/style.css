@@ -1,4 +1,23 @@
 
 
+/* FONDO HOME */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#carouselExampleIndicators {
+    height: 100vh;
+}
+
+.carousel-inner {
+    height: 100%;
+}
 
 /* NAVBAR */
+.navbar {
+    background-color: #000;
+    opacity: 70%;
+    position: absolute;
+}
