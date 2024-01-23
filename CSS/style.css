@@ -11,6 +11,28 @@
     text-align: center;
 }
 
+.Mapa{
+    width: 460vh;
+}
+
+
+
+  /* Footer */
+#footer{
+    background: #282827;
+    height: 382px;
+}
+#footer h3{
+    color: #D9B073;
+}
+#footer p{
+    color: #fff;
+}
+
+.container{
+    text-align: center;
+}
+
 /*Barra de Navegación  */
 .navbar {
     padding: 1rem;
