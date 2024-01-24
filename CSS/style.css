@@ -116,6 +116,11 @@ body, html {
     position: absolute;
 }
 
+.navbar .navbar2 {
+    background-color: #000;
+    position: relative;
+}
+
 .navbar-nav  .nav-link {
     color: #fff;
     transition: color 0.7s, text-shadow 0.7s, font-size 0.7s;
