@@ -12,12 +12,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x.icon" href="./img/favicon.png">
 
-    <!-- link CSS -->
-    <link rel="stylesheet" href="./CSS/style.css">
-
-    <!-- Link JS -->
-    <script src="./js/script.js" defer ></script>
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -27,33 +21,39 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Link JS -->
+    <script src="./js/script.js" defer ></script>
+
     <title>Home </title>
 </head>
 <body id="home">
   <div>
     <!-- Carrucel de fondo -->
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="10000">
           <img src="./img/backgraund1.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="10000">
           <img src="./img/background2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <img src="./img/background3.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -66,8 +66,9 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-flex justify-content-between" id="navbar-toggler">
-          <a class="navbar-brand" href="index.html">
-              <img src="./img/LogoWhite.png" alt="Logo" width="150px">
+          <a class="navbar-brand" href="#home">
+            <img src="./img/LogoWhite.png" alt="Logo" width="150px">
+            <p class="nav-item d-inline-flex">Machine Spot</p>
           </a>
           <ul class="navbar-nav text-decoration-none d-flex justify-content-end aling-items-between ">
             <li class="nav-item ">
@@ -90,6 +91,5 @@
       </div>
     </nav>
   </div>
-
 </body>
 </html>
