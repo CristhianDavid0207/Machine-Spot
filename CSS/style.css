@@ -4,7 +4,7 @@
 /* Location */
 .tituloLocation{
     font-family: "Kanit", sans-serif;
-    color: #D9B073;
+    color: rgb(217, 176, 115);
 }
 
 .titulo{
@@ -12,15 +12,15 @@
 }
 
 .Mapa{
-    width: 460vh;
+    width: 100vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000;
 }
-
-
 
   /* Footer */
 #footer{
     background: #282827;
-    height: 382px;
+    margin-top: 80px;
 }
 #footer h3{
     color: #D9B073;
@@ -28,12 +28,36 @@
 #footer p{
     color: #fff;
 }
-
+#footer hr{
+    background: #D9B073;
+    width: 100%;
+    size: 3px;
+}
 .container{
     text-align: center;
 }
 
+.copyright{
+    background: #000;
+}
 
+#facebook{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+#instagram{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+#twitter{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
 
 /* FONDO HOME */
 body, html {
