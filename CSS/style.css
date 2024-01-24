@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.img{
+    display: flex;
+    width: 125px;
+    border-radius: 600px;
+    left: 40px;
+
+}
+
+.row{
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 3vw;
+    position: relative;
+    left: 50px;
+}
+
+.letra{
+    color: aliceblue;
+}
+
+
+
+
+.card1{
+    background-color: dimgray;
+    border:  1px solid #D9B073;
+}
+.card1:hover{
+    transform: scale(0.9);
+    transition: 0.9s
+}
