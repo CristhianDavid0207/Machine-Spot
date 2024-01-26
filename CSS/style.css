@@ -1,3 +1,6 @@
+/* Fuente de la letra*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -17,6 +20,7 @@
     font-size: 3vw;
     position: relative;
     left: 50px;
+    top: 130px;
 }
 
 .letra{
@@ -33,10 +37,15 @@
 .card1:hover{
     transform: scale(0.9);
     transition: 0.9s
-}/* Fuente de la letra*/
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
 
 /* Location */
+#location{
+    display: grid;
+    min-height: 100vh;
+    /* grid-template-rows: auto; */
+}
+
 .tituloLocation{
     font-family: "Kanit", sans-serif;
     color: rgb(217, 176, 115);
@@ -56,6 +65,7 @@
 #footer{
     background: #282827;
     margin-top: 80px;
+    padding: 1em 0;
 }
 #footer h3{
     color: #D9B073;
@@ -74,6 +84,7 @@
 
 .copyright{
     background: #000;
+    margin-top: auto;
 }
 
 #facebook{
