@@ -47,7 +47,10 @@ body {
     width: 125px;
     border-radius: 600px;
     left: 40px;
-
+    -webkit-border-radius: 600px;
+    -moz-border-radius: 600px;
+    -ms-border-radius: 600px;
+    -o-border-radius: 600px;
 }
 
 .row{
@@ -55,7 +58,6 @@ body {
     padding: 25px;
     text-align: center;
     font-size: 3vw;
-    position: relative;
     left: 50px;
     top: 130px;
     font-family: "Kanit", sans-serif;
@@ -75,7 +77,15 @@ body {
 }
 .card1:hover{
     transform: scale(0.9);
-    transition: 0.9s
+    transition: 0.9s;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 /* Location */
@@ -268,6 +278,16 @@ body, html {
 }
 
 .card-text{
-    font-size: medium;
+    font-size: 33px;
 }
 
+/* About Us */
+
+.card-history {
+    margin-top: 170px;
+}
+
+.mision {
+    display: flex;
+    flex-direction: row;
+}
