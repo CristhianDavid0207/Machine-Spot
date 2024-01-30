@@ -31,3 +31,40 @@ function TraerInformacion(){
         modal.style.display = 'none';
     }
 }
+
+
+
+
+function iniciarsesion(){
+    alert('estas dando click')
+
+    var modal = document.getElementById('modal');
+    var botonCerrar = document.getElementById('close');
+
+    modal.style.display = 'block';
+
+    botonCerrar.onclick = function (){
+        modal.style.display = 'none';
+    }
+    document.getElementById("toRegister").onclick = function() {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("registerForm").style.display = "block";
+    }
+    
+    document.getElementById("toLogin").onclick = function() {
+        document.getElementById("registerForm").style.display = "none";
+        document.getElementById("loginForm").style.display = "block";
+    }
+}
+
+
+function inicio(){
+    let email = document.getElementById('email').value;
+    let contraseña = document.getElementById('password').value;
+
+
+    fetch('http://example.com/movies.json')
+    .then(response => response.json())
+    .then(data => console.log(data));
+
+}
