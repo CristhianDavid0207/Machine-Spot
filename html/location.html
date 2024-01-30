@@ -53,16 +53,17 @@
               <a class="nav-link" href="./catalogo.html">Services</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link register" href="#">Register</a>
+              <a class="nav-link register" id="" href="#">Register</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link login" href="#">Login</a>
+              <a class="nav-link login" onclick="iniciarsesion()" href="#">Login</a>
               </li>  
             </ul>
           </div>
         </div>
     </nav>
   </header>
+
     <!-- Mapa de Medellín -->
     <div class="ubicacion d-flex justify-content-center align-items-center">
         <div class="bodylocation">
@@ -96,6 +97,30 @@
         </div>
     </footer>
 
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close" id="close">&times;</span>
+
+      <!-- Contenido del Modal -->
+      <div id="loginForm">
+          <h2>Iniciar Sesión</h2>
+          <input type="text" id="email" placeholder="Email">
+          <input type="password" id="password" placeholder="Contraseña">
+          <button onclick="inicio()">Iniciar Sesión</button>
+          <p>No tienes cuenta? <span id="toRegister">Regístrate</span></p>
+      </div>
+
+      <div id="registerForm" style="display:none;">
+          <h2>Registrarse</h2>
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Email">
+          <input type="password" placeholder="Contraseña">
+          <button>Registrarse</button>
+          <p>Ya tienes cuenta? <span id="toLogin">Iniciar Sesión</span></p>
+      </div>
+  </div>
+</div>
 
 </body>
 </html>
