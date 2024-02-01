@@ -20,7 +20,8 @@
     <link rel="icon" type="image/x.icon" href="../img/favicon.png">
     
     <!-- link CSS -->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/mendoza.css">
     
     <!-- Link JS -->
     <script src="../js/script.js" defer ></script>
@@ -37,93 +38,93 @@
     <title>Home </title>
 </head>
 <body id="services">
-
-    <nav class="navbar navbar2 navbar-expand-md navbar-ligth fixed-top">
-        <div class="container-fluid justify">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbar-toggler">
-            <a class="navbar-brand" href="#services">
-              <img src="../img/LogoWhite.png" alt="Logo" width="150px">
-              <p class="nav-item d-inline-flex">Machine Spot</p>
-            </a>
-            <ul class="navbar-nav text-decoration-none d-flex justify-content-end aling-items-between ">
-              <li class="nav-item ">
-              <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link" href="./aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link" href="./location.html">Location</a>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link register" href="#">Register</a>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link login" href="#">Login</a>
-              </li>  
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <img src="../img/LogoWhite.png" width="150" alt="logo">
+                <h1 class="nav-item d-inline-flex">Machine Spot</h1>
+            </a>    
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./Catalogue.html">Services</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./location.html">Location</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link login" href="#" onclick="Ingreso()" >Login</a>
+                </li>
             </ul>
-          </div>
+            </div>
         </div>
     </nav>
 
     
 
         <!--inicio del catalogo-->
-        <section>
+        <section class="section1">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 my-5">
                         <div class="card1 p-3">
                             <img class="img-fluid" src="https://media.istockphoto.com/id/1249904607/es/foto/llave-aislada-sobre-fondo-blanco.jpg?s=1024x1024&w=is&k=20&c=jxqwuiag6AClYkKRqIXWNsdsP4_xizueOjnBhAbxjy0=" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     Wrench
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     lorena mendoza
                                 </h6>
                                 <h6>
-                                    $50 MXN
+                                    A wrench is a hand tool designed to tighten or loosen nuts.
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 my-5">
                         <div class="card1 p-3">
                             <img class="img-fluid" src="https://cdn.pixabay.com/photo/2014/09/13/21/47/tools-444499_1280.jpg" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     drill bits
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     luis alzate
                                 </h6>
                                 <h6>
-                                    $250 USD
+                                    mechanical devices used to hold and secure drill bits in the drill.
 
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card1 p-3">
+                    <div class="col-md-4 my-5">
+                        <div class="card1 p-3 w-100">
                             <img class="img-fluid" src="https://media.istockphoto.com/id/636821270/es/foto/llaves-%C3%A1ngulo-y-conector-en-t.jpg?s=1024x1024&w=is&k=20&c=SS6Z6dI_pKQcKJtZh_xre60YR5qKLmm9HwWWftQOHbI=" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     Wrench
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     mariana mendoza
                                 </h6>
                                 <h6>
-                                    En oferta
+                                    A wrench kit is a set of essential tools designed to offer a complete solution
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
@@ -131,16 +132,16 @@
                         <div class="card1 p-3">
                             <img class="img-fluid" src="https://media.istockphoto.com/id/522579623/es/foto/herramientas-de-trabajo.jpg?s=1024x1024&w=is&k=20&c=o-xttILntcVFJd-1pkZux-lpyaRNjHhwTPYoCoCEKYE=" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     drill
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     isabela guzman
                                 </h6>
                                 <h6>
-                                    $750 USD
+                                    A drill is a power or hand tool designed to drill or widen holes in various materials.
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
@@ -148,36 +149,36 @@
                         <div class="card1 p-3">
                             <img class="img-fluid" src="https://cdn.pixabay.com/photo/2010/12/13/10/01/celsius-2125_1280.jpg" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     measurer
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     luna lopez
                                 </h6>
                                 <h6>
-                                    In progress
+                                    A meter is a measuring instrument used to quantify the characteristics of an object
                                 </h6>
                                 <h6 style="display: none;">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, unde!
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 my-5">
-                        <div class="card1 p-3">
+                        <div class="card1 p-3 ">
                             <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/12/11/20/03/spanner-3013129_1280.jpg" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     keys
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     marcela castrillon
                                 </h6>
                                 <h6>
-                                    Not started yet
+                                    is a tool designed to adjust or manipulate mechanical objects
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
@@ -185,16 +186,16 @@
                         <div class="card1 p-3">
                             <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/03/20/19/38/hammer-682767_1280.jpg" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     hammer
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     sara velasquez
                                 </h6>
                                 <h6>
-                                    Not started yet
+                                    A hammer is a hand tool with a handle and a heavy head, used for striking or extracting nails in various materials.
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
@@ -202,17 +203,17 @@
                         <div class="card1 p-3 h-100">
                             <img class="img-fluid" src="https://cdn.pixabay.com/photo/2016/11/29/03/43/shovel-1867123_1280.jpg" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     
                                     shovel
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     willmar garcia
                                 </h6>
                                 <h6>
-                                    Not started yet
+                                    A shovel is a hand tool with a wide, flat blade attached to a long handle, used for digging,
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
@@ -220,16 +221,16 @@
                         <div class="card1 p-3 h-100">
                             <img class="img-fluid" src="https://media.istockphoto.com/id/1079064134/es/foto/gabinetes-de-renovaci%C3%B3n-de-encimeras-de-granito-y-granito.jpg?s=2048x2048&w=is&k=20&c=s5khaWTc2yXwkkpuGfEivwQBo21EG-OpqFN_-ewCT58=" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     stability
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     luisa fernanda
                                 </h6>
                                 <h6>
-                                    Not started yet
+                                    A leveler is a tool that allows you to determine the horizontality or verticality of a surface,
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
@@ -237,16 +238,16 @@
                         <div class="card1 p-3 h-100">
                             <img class="img-fluid" src="https://cdn.pixabay.com/photo/2023/05/30/11/34/cutting-granite-stones-8028375_1280.jpg" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     Mountain range
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     lupe castrillon
                                 </h6>
                                 <h6>
-                                    Not started yet
+                                    A saw is a cutting tool consisting of a serrated blade, disc or chain with sharp teeth, used to cut materials such as wood, metal or plastic.
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
@@ -254,16 +255,16 @@
                         <div class="card1 p-3 h-100">
                             <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/12/08/21/42/tools-1083796_1280.jpg" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     keys
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     marcela castrillon
                                 </h6>
                                 <h6>
-                                    Not started yet
+                                    A carpenter's kit is a set of essential tools designed for carpentry work, typically including items such as a hammer, saw, tape measure, square,
                                 </h6>
-                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
@@ -271,23 +272,25 @@
                         <div class="card1 p-3 h-100">
                             <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/08/15/21/32/toolbox-2645700_1280.jpg" alt="">
                             <div class="card-body">
-                                <h1>
+                                <h2>
                                     kit
-                                </h1>
+                                </h2>
                                 <h6 class="letra">
                                     robinson cortes  
                                 </h6>
                                 <h6>
-                                    Not started yet
+                                    A nut kit is a set of nuts of different sizes and types, designed to offer a wide range of fastening options.
                                 </h6>
                                 
-                                <button id="mostrarModal" onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">Warning</button>
+                                <button id="mostrarModal" onclick="TraerInformacion()" type="button" class="btn btn-outline-warning">lease</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
     <!--fin del catalogo-->
 
     <div id="miModal" class="modal" tabindex="-1">
@@ -310,5 +313,29 @@
         </div>
       </div>
 
+      <!-- Section Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="info-footer">
+                <h3>Machine Spot</h3>
+                <p>Rental of machines and tools</p>
+                <div class="Redes d-flex justify-content-center align-items-center">
+                    <i id="facebook" class="bi bi-facebook " ></i>
+                    <i id="instagram" class="bi bi-instagram"></i>
+                    <i id="twitter" class="bi bi-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright d-flex justify-content-center align-items-center">
+                <p><i class="bi bi-c-circle"></i> Copyright <strong>MachineSpot.</strong>All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>
+
+
+
