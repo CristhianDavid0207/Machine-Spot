@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En Machine Spot, ofrecemos una amplia variedad de máquinas y herramientas para llevar a cabo tus proyectos sin la necesidad de realizar una inversión completa. Simplifica tu experiencia y evita el almacenamiento innecesario al optar por el alquiler de herramientas y maquinaria para cada ocasión. ¡Haz realidad tus proyectos con flexibilidad y comodidad!">
     <meta name="keywords" content="Alquiler de Herramientas, Herramientas Eléctricas en Alquiler, Herramientas para Construcción, Herramientas para Jardín, Alquiler de Equipos, Bricolaje, Maquinaria para Construcción, Herramientas Manuales">
-    <meta name="author" content="Isabela Guzman, Samuel Mendonza, Alejandra Velasquez, Cristhian David Bermudez">
+    <meta name="author" content="Isabella Guzman, Samuel Mendonza, Alejandra Velasquez, Cristhian David Bermudez">
     <meta name="robots" content="index, follow">
 
     <!-- Favicon -->
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../CSS/home.css">          
 
     <!-- Link JS -->
-    <script src="./js/script.js" defer ></script>
+    <script src="../js/script.js" defer ></script>
 
     <title>Location | Machine Spot </title>
 </head>
@@ -55,7 +55,7 @@
                 <a class="nav-link active" aria-current="page" href="./location.html">Location</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link login" href="#">Login</a>
+                <a class="nav-link login" href="#" onclick="Ingreso()" >Login</a>
                 </li>
             </ul>
             </div>
@@ -92,27 +92,52 @@
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="close">&times;</span>
-
-            <!-- Contenido del Modal -->
-            <div id="loginForm">
-                <h2>Iniciar Sesión</h2>
-                <input type="text" id="email" placeholder="Email">
-                <input type="password" id="password" placeholder="Contraseña">
-                <button onclick="inicio()">Iniciar Sesión</button>
-                <p>No tienes cuenta? <span id="toRegister">Regístrate</span></p>
+     <!-- Modal del login -->
+    <!-- Parte trasera del modal -->
+    <div id="Login_modal" class="modal" tabindex="-1" style="display: block;">
+        <div id="content_All" class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login" style="display: block; opacity: 1;">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register" style="display: block; opacity: 1;">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button type="button" id="btn__registrarse">Regístrarse</button>
+                </div>
             </div>
+    
+            <!--Formulario de Login y registro-->
+    
+            <div class="contenedor__login-register" style="left: 0px;">
+    
+                <!--Register-->
+                <form action="" class="formulario__register" style="display: none;">
+                    <h2>Regístrarse</h2>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Cédula">
+                    <input type="password" placeholder="Contraseña">
+                    <a href="#" onclick="PasarLogin()" id="LinkLogin">¿Ya tienes una cuenta? Inicia sesión</a>
+                    <div class="Botones">
+                        <button type="button">Regístrarse</button>
+                        <button type="button" id="btnSalir2" onclick="SalirLogin()">Salir</button>
+                    </div>
+                </form>
 
-            <div id="registerForm" style="display:none;">
-                <h2>Registrarse</h2>
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <button>Registrarse</button>
-                <p>Ya tienes cuenta? <span id="toLogin">Iniciar Sesión</span></p>
+                 <!--Login-->
+                <form action="" class="formulario__login" style="display: block;">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electronico" id="email">
+                    <input type="password" placeholder="Contraseña" id="password">
+                    <a href="#" onclick="PasarRegistro()" id="LinkRegister">¿No tienes una cuenta? Registrate</a>
+                    <div class="Botones">
+                        <button type="button" onclick="login()">Entrar</button>
+                        <button type="button" id="btnSalir1" onclick="SalirLogin()">Salir</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
