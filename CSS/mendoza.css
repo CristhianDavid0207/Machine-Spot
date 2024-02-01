@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.img{
+    display: flex;
+    width: 125px;
+    border-radius: 600px;
+    left: 40px;
+    -webkit-border-radius: 600px;
+    -moz-border-radius: 600px;
+    -ms-border-radius: 600px;
+    -o-border-radius: 600px;
+}
+
+.row{
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 3vw;
+    left: 50px;
+    top: 130px;
+    font-family: "Kanit", sans-serif;
+}
+
+.letra{
+    color: aliceblue;
+    font-family: "Kanit", sans-serif;
+}
+
+.card1{
+    background-color: dimgray;
+    border:  1px solid #D9B073;
+}
+.card1:hover{
+    transform: scale(0.9);
+    transition: 0.9s;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.section1{
+    background-color: #282827;
+}
+
