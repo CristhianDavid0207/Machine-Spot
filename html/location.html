@@ -92,50 +92,46 @@
         </div>
     </footer>
 
-     <!-- Modal del login -->
+    <!-- Modal del login -->
     <!-- Parte trasera del modal -->
-    <div id="Login_modal" class="modal" tabindex="-1" style="display: block;">
+    <div id="Login_modal" class="modal" tabindex="-1">
         <div id="content_All" class="contenedor__todo">
             <div class="caja__trasera">
                 <div class="caja__trasera-login" style="display: block; opacity: 1;">
-                    <h3>¿Ya tienes una cuenta?</h3>
-                    <p>Inicia sesión para entrar en la página</p>
-                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    <h3>Do you already have an account?</h3>
+                    <p>Log in to enter the page</p>
+                    <button id="btn__iniciar-sesion">Log in</button>
                 </div>
                 <div class="caja__trasera-register" style="display: block; opacity: 1;">
-                    <h3>¿Aún no tienes una cuenta?</h3>
-                    <p>Regístrate para que puedas iniciar sesión</p>
-                    <button type="button" id="btn__registrarse">Regístrarse</button>
+                    <h3>Do not you have an account yet?</h3>
+                    <p>Sign up so you can log in</p>
+                    <button type="button" id="btn__registrarse">Sign up</button>
                 </div>
             </div>
     
             <!--Formulario de Login y registro-->
-    
             <div class="contenedor__login-register" style="left: 0px;">
     
                 <!--Register-->
                 <form action="" class="formulario__register" style="display: none;">
-                    <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Cédula">
-                    <input type="password" placeholder="Contraseña">
-                    <a href="#" onclick="PasarLogin()" id="LinkLogin">¿Ya tienes una cuenta? Inicia sesión</a>
+                    <h2>Sign up</h2>
+                    <input type="text" id="Name_SignUp" class="" placeholder="Name">
+                    <input type="text" id="Email_SignUp" class="" placeholder="Email">        
+                    <input type="password" id="Password_SignUp" class="" placeholder="Password">
                     <div class="Botones">
-                        <button type="button">Regístrarse</button>
-                        <button type="button" id="btnSalir2" onclick="SalirLogin()">Salir</button>
+                        <button type="button" onclick="Sign_Up()" >Sign up</button>
+                        <button type="button" id="btnSalir2" onclick="SalirLogin()">Close</button>
                     </div>
                 </form>
 
                  <!--Login-->
                 <form action="" class="formulario__login" style="display: block;">
-                    <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico" id="email">
-                    <input type="password" placeholder="Contraseña" id="password">
-                    <a href="#" onclick="PasarRegistro()" id="LinkRegister">¿No tienes una cuenta? Registrate</a>
+                    <h2>Log in</h2>
+                    <input type="text" placeholder="Email" id="email_LogIn">
+                    <input type="password" placeholder="Password" id="password_LogIn">
                     <div class="Botones">
-                        <button type="button" onclick="login()">Entrar</button>
-                        <button type="button" id="btnSalir1" onclick="SalirLogin()">Salir</button>
+                        <button type="button" onclick="Log_In()">Log in</button>
+                        <button type="button" id="btnSalir1" onclick="SalirLogin()">Close</button>
                     </div>
                 </form>
             </div>

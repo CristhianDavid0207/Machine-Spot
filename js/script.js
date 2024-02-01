@@ -102,7 +102,7 @@ anchoPage();
 function iniciarSesion(){
     if (window.innerWidth > 850){
         formulario_login.style.display = "block";
-        contenedor_login_register.style.left = "10px";
+        contenedor_login_register.style.left = "0px";
         formulario_register.style.display = "none";
         caja_trasera_register.style.opacity = "1";
         caja_trasera_login.style.opacity = "0";
@@ -152,7 +152,7 @@ function PasarRegistro(){
 function PasarLogin(){
     if (window.innerWidth > 850){
         formulario_login.style.display = "block";
-        contenedor_login_register.style.left = "10px";
+        contenedor_login_register.style.left = "0px";
         formulario_register.style.display = "none";
         caja_trasera_register.style.opacity = "1";
         caja_trasera_login.style.opacity = "0";
@@ -167,8 +167,9 @@ function PasarLogin(){
 
 // Función para abrir el cuestionario
 let Login_modal = document.getElementById("Login_modal");
+
 function Ingreso() {
-    Login_modal.style.display = "block";    
+    Login_modal.style.display = "block"; 
 }
 
 // Función para cerrar el cuestionario
@@ -177,9 +178,9 @@ function SalirLogin(){
 }
 
 // Fetch
-function login() {
-  let email = document.getElementById("email") 
-  let password = document.getElementById("password");
+function Log_In() {
+  let email = document.getElementById("email_LogIn") 
+  let password = document.getElementById("password_LogIn");
 
     fetch("http://localhost:3000/registrados")
         .then((r) => r.json())
@@ -190,6 +191,7 @@ function login() {
             if (resultado.length > 0) {
             
                 if(resultado[0].password == password.value){
+                    location.href="catalogo.html"
                     console.log("Todo muy bien")
                 }else{
                     console.log("usuario o contraseña invalidos¡")
@@ -200,4 +202,29 @@ function login() {
     });
 }
 
-login();
+function Sign_Up(){
+    let Name_SignUp = document.getElementById("Name_SignUp");
+    let Email_SignUp = document.getAnimations("Email_SignUp");
+    let Password_SignUp = document.getElementById("Password_SignUp");
+
+    Usuario_Nuevo = {
+        name: Name_SignUp.value,
+        email: Email_SignUp.value,
+        password: Password_SignUp.value
+    }
+
+    fetch(`http://localhost:3000/registrados`,{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(Usuario_Nuevo)
+
+        })
+        .then(response => {
+            return response.json()
+        }).then(data => {
+            console.log(data.correo);
+            console.log(data.name);
+        });
+}
