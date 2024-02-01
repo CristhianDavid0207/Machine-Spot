@@ -131,11 +131,48 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
 
 .carousel-inner {
     height: 100vh;
+    justify-content: center;
 }
 
 .carousel-inner img{
     height: 100vh;
     width: 100vh;
+}
+
+.carousel-inner .carousel-caption {
+    top: 300px;
+    text-align: left;  
+}
+
+.carousel-caption h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Kanit", sans-serif;
+    text-shadow: 2px 5px 5px black;
+}
+
+.carousel-caption p {
+    color: #000;
+    font-size: 2rem;
+    font-family: "Kanit", sans-serif;
+    text-shadow: 2px 5px 5px white;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-caption h2 {
+        color: #fff;
+        font-size: 2rem;
+        font-family: "Kanit", sans-serif;
+        text-shadow: 2px 5px 5px black;
+    }
+    
+    .carousel-caption p {
+        color: #000;
+        font-size: 1rem;
+        font-family: "Kanit", sans-serif;
+        text-shadow: 2px 5px 5px white;
+    }
+    
 }
 
 
