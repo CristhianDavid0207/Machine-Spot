@@ -1,3 +1,6 @@
+/* Fuente de la letra*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* INITIAL */
 body, html { /* Quitando margenes predeterminadas a la pagina */
     margin: 0;
@@ -60,6 +63,10 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     transition: color 1s ease, text-shadow 1s ease, transform 1s ease;
 }
 
+.active {
+    color: rgba(217, 176, 115, 1) !important; 
+}
+
 .navbar-nav .nav-link:hover { /* realiza cambios a las opciones del Navbar cuando pasa el mouse sobre el elemento */
     color: rgba(217, 176, 115, 1); 
     transform: scale(0.95);
@@ -75,7 +82,7 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     font-weight: bold;
     border: solid 1px rgba(255, 255, 255, 1);
     border-radius: 4px;      
-    transition: color 1s ease, text-shadow 1s ease, transform 1s ease;
+    transition: color 1s ease, text-shadow 1s ease, transform 1s ease, background 1s ease;
 }
 
 .navbar-nav .login:hover { /* Realiza cambios especificos en la opción login cuando el mause pasa bobre el*/
@@ -83,7 +90,7 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     background-color: transparent;   
     border: solid 1px rgba(217, 176, 115, 1);
     border-radius: 4px;      
-    transition: color 1s ease, text-shadow 1s ease, transform 1s ease;
+    transition: color 1s ease, text-shadow 1s ease, transform 1s ease , background 1s ease;
 }
 
 @media screen and (max-width: 767px) {
@@ -130,6 +137,218 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     height: 100vh;
     width: 100vh;
 }
+
+
+/* Location */
+/* CAMBIOS GENERALES */
+/* Cambios en el NAvbar */
+#location{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #282827;
+}
+
+#location .navbar {   
+    background-color: rgba(71, 71, 71, 0.7);
+    position: sticky;
+    top: 0;
+}
+
+/* Mapa */
+
+.tituloLocation{
+    font-family: "Kanit", sans-serif;
+    color: rgba(217, 176, 115, 1);
+}
+
+.titulo{
+    padding: 15px;
+    text-align: center;
+}
+
+.Mapa{
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(217, 176, 115, 1);
+    margin-bottom: 50px;
+}   
+
+  /* Footer */
+.info-footer{
+    background: #151410;
+    padding-top: 45px;
+    text-align: center;
+    height: 200px;
+}
+
+#footer h3{
+    color: #D9B073;
+    margin-top: 10px;
+    font-family: "Kanit", sans-serif;
+}
+
+#footer p{
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+}
+
+.footer-bottom{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+}
+
+.copyright{
+    background: #000;
+    margin-top: auto;
+    height: 100px;
+    text-align: center;
+    
+}
+
+#facebook{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+#instagram{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+#twitter{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+/* ABOUTUS */
+#aboutus .navbar {   
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+/* section history */
+.history { /* Cambio fondo de la section history*/
+    background-color: rgb(40, 40, 39) ;
+}
+
+.history .title-aboutus { /* Realiza ajustes en el titulo*/
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    color: rgba(217, 176, 115, 1);
+    font-size: 2.5rem;
+    padding: 20px;
+    margin: 0px;
+}
+
+.history .card-img-top { /* Ajusta el tamaño de la imagen*/
+    font-family: "Kanit", sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(217, 176, 115, 1);
+    margin: 0px 0px 10px 0px;
+    height: 500px;
+    max-width: 700px;
+}
+
+.history .text-aboutus { /* Realiza los ajustes en el texto <p> */
+    text-align: justify !important;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.2rem;
+    padding: 40px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+/* Section Mission */
+.mission { /* Cambio fondo de la section history*/
+    background-color: rgba(0, 0, 0, 1) ;
+}
+
+.mission .title-aboutus { /* Realiza ajustes en el titulo*/
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    color: rgba(217, 176, 115, 1);
+    font-size: 2.5rem;
+    padding: 5px;
+    margin: 0px;
+}
+
+.mission .card-img-top { /* Ajusta el tamaño de la imagen*/
+    font-family: "Kanit", sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(217, 176, 115, 1);
+    height: 220px;
+    width: 50%;
+}
+
+.mission .text-aboutus { /* Realiza los ajustes en el texto <p> */
+    text-align: justify !important;
+    font-family: "Kanit", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Section Vission */
+.vission { /* Cambio fondo de la section history*/
+    background-color: rgb(40, 40, 39)  ;
+}
+
+.vission .title-aboutus { /* Realiza ajustes en el titulo*/
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    color: rgba(217, 176, 115, 1);
+    font-size: 2.5rem;
+    padding: 5px;
+    margin: 0px;
+}
+
+.vission .card-img-top { /* Ajusta el tamaño de la imagen*/
+    font-family: "Kanit", sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(217, 176, 115, 1);
+    height: 220px;
+    width: 50%;
+}
+
+.vission .text-aboutus { /* Realiza los ajustes en el texto <p> */
+    text-align: justify !important;
+    font-family: "Kanit", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .container-fluid .card-img-top { /* Ajusta la altura de la imagen en dispositivos pequeños*/
+        height: 350px;
+    }
+
+    .history .text-aboutus { /*Ajusta el tamaño de la letra en dispositivos pequeños*/
+        font-size: 1rem;   
+    }
+
+    .mission .text-aboutus { /*Ajusta el tamaño de la letra en dispositivos pequeños*/
+        text-align: center !important;
+        font-size: 1rem; 
+    }
+
+    .mission .card-img-top { /* Ajusta el tamaño de la imagen*/
+        width: 100%;
+        height: 100%;
+    }
+
+    .vission .text-aboutus { /*Ajusta el tamaño de la letra en dispositivos pequeños*/
+        text-align: center !important;
+        font-size: 1rem; 
+    }
+
+    .vission .card-img-top { /* Ajusta el tamaño de la imagen*/
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
 
 
