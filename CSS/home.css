@@ -368,20 +368,9 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
 #Login_modal{
     display: none;
     text-align: center;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0,0,0); /*Fallback color */
+    background-color: rgba(0,0,0,0.4);
 }
-
-#LinkRegister{
-    display: none;
-}
-#LinkLogin{
-    display: none;
-}
-
-/*#content_All{
-    display: none;
-}*/
 
 .contenedor__todo{
     max-width: 800px;
@@ -444,10 +433,6 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     color: #D9B073;
 }
 
-.caja__trasera-register{
-    padding-left: 80px;
-}
-
 /*Formularios*/
 
 .contenedor__login-register{
@@ -456,11 +441,9 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     width: 100%;
     top: -185px;
     left: 10px;
-
     max-width: 800px;
     margin: auto;
     position: relative;
-
     /*La transicion va despues del codigo JS*/
     transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
@@ -517,6 +500,7 @@ form{
 
 .Botones{
     display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -529,20 +513,15 @@ form{
 .formulario__register{
     display: none;
 }
-#btnSalir2,
-#btnSalir1{
-    margin-left: 20px;
-}
 
 
 
 @media screen and (max-width: 850px){
     .caja__trasera{
         position: relative;
-        max-width: 400px;
-        height: 451px;
+        max-width: 370px;
+        height: 370px;
         margin: auto;
-       /* flex-direction: column;*/
     }
     .caja__trasera-register{
         padding-left: 0px;
@@ -550,15 +529,7 @@ form{
     
     .contenedor__login-register{
         position: relative;
-        /* margin-top: 100%;
-        margin-left: 20px; */
-    }
-    
-    #LinkRegister{
-        display: block;
-    }
-    #LinkLogin{
-        display: block;
+        max-width: 370px;
     }
 }
 

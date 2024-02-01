@@ -55,7 +55,7 @@
             <a class="nav-link" href="./html/location.html">Location</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link login" href="#">Login</a>
+            <a class="nav-link login" href="#" onclick="Ingreso()" >Login</a>
           </li>
         </ul>
       </div>
@@ -89,6 +89,53 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <!-- Modal del login -->
+    <!-- Parte trasera del modal -->
+    <div id="Login_modal" class="modal" tabindex="-1">
+      <div id="content_All" class="contenedor__todo">
+          <div class="caja__trasera">
+              <div class="caja__trasera-login" style="display: block; opacity: 1;">
+                  <h3>Do you already have an account?</h3>
+                  <p>Log in to enter the page</p>
+                  <button id="btn__iniciar-sesion">Log in</button>
+              </div>
+              <div class="caja__trasera-register" style="display: block; opacity: 1;">
+                  <h3>Do not you have an account yet?</h3>
+                  <p>Sign up so you can log in</p>
+                  <button type="button" id="btn__registrarse">Sign up</button>
+              </div>
+          </div>
+  
+          <!--Formulario de Login y registro-->
+          <div class="contenedor__login-register" style="left: 0px;">
+  
+              <!--Register-->
+              <form action="" class="formulario__register" style="display: none;">
+                  <h2>Sign up</h2>
+                  <input type="text" placeholder="Name">
+                  <input type="text" placeholder="Email">
+                  <input type="password" placeholder="Password">
+                  <div class="Botones">
+                    <button type="button" id="btnSalir2" onclick="SalirLogin()">Close</button>
+                    <button type="button">Sign up</button>
+                  </div>
+              </form>
+
+               <!--Login-->
+              <form action="" class="formulario__login" style="display: block;">
+                  <h2>Log in</h2>
+                  <input type="text" placeholder="Email" id="email">
+                  <input type="password" placeholder="Password" id="password">
+                  <div class="Botones">
+                    <button type="button" id="btnSalir1" onclick="SalirLogin()">Close</button>
+                    <button type="button" onclick="login()">Log in</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  
   
 </body>
 </html>
