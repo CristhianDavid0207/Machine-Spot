@@ -172,6 +172,11 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
         font-family: "Kanit", sans-serif;
         text-shadow: 2px 5px 5px white;
     }
+
+    .carousel-inner .carousel-caption {
+        top: 145px;
+        text-align: left;  
+    }
     
 }
 
@@ -188,15 +193,17 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
 
 #location .navbar {   
     background-color: rgba(71, 71, 71, 0.7);
-    position: sticky;
-    top: 0;
+    position: fixed;
+    box-shadow: 2px 2px 5px rgba(217, 176, 115, 1);    
 }
+
 
 /* Mapa */
 
 .tituloLocation{
     font-family: "Kanit", sans-serif;
     color: rgba(217, 176, 115, 1);
+    padding-top: 160px; 
 }
 
 .titulo{
@@ -260,15 +267,23 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+    .tituloLocation{
+        padding-top: 60px; 
+    }
+}
+
 /* ABOUTUS */
 #aboutus .navbar {   
-    background-color: rgba(0, 0, 0, 1);
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    box-shadow: 2px 2px 5px rgba(217, 176, 115, 1);
 }
 
 /* section history */
 .history { /* Cambio fondo de la section history*/
     background-color: rgb(40, 40, 39) ;
+    padding-top: 160px;
 }
 
 .history .title-aboutus { /* Realiza ajustes en el titulo*/
@@ -359,6 +374,10 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
 }
 
 @media screen and (max-width: 767px) {
+    .history { /* Cambio padding de la section history*/
+        padding-top: 60px;
+    }
+
     .container-fluid .card-img-top { /* Ajusta la altura de la imagen en dispositivos pequeños*/
         height: 350px;
     }
@@ -424,7 +443,7 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     align-items: center;
     background-color: #D9B073;
     position: relative;
-    margin-top: 140px;
+    margin-top: 65px;
     text-align: center;
     height: 451px;
 }
@@ -612,5 +631,65 @@ form{
     }
 }
 
+/* SERVICES */
+/* NAVBAR SERVICES */
+#services .navbar {   
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    box-shadow: 2px 2px 5px rgba(217, 176, 115, 1);
+}
 
+.img {
+    display: flex;
+    width: 125px;
+    border-radius: 600px;
+    left: 40px;
+    -webkit-border-radius: 600px;
+    -moz-border-radius: 600px;
+    -ms-border-radius: 600px;
+    -o-border-radius: 600px;
+  }
+
+  .row {
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 3vw;
+    left: 50px;
+    top: 130px;
+    font-family: "Kanit", sans-serif;
+  }
+  
+  .letrasm {
+    color: aliceblue;
+    font-family: "Kanit", sans-serif;
+  }
+  
+  .card1 {
+    background-color: transparent;
+    border: 1px solid #d9b073;
+    border-radius: 20px;
+  }
+  .card1:hover {
+    transform: scale(0.9);
+    transition: 0.9s;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+  
+  .section1 {
+    background-color: #282827;
+    padding-top: 160px;
+
+  }
+  
+  .titoll {
+    color: aliceblue;
+  }
+  
+  .descriptionn{
+      color: azure;
+  }
 
