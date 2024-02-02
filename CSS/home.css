@@ -413,6 +413,7 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     max-width: 800px;
     margin: auto;
     position: relative;
+    top: 100px;
 }
 
 .caja__trasera{
@@ -554,19 +555,24 @@ form{
 
 
 @media screen and (max-width: 850px){
+      .contenedor__todo{
+        top: 10px;
+    }
     .caja__trasera{
         position: relative;
-        max-width: 370px;
-        height: 370px;
+        max-width: 330px;
+        height: 330px;
         margin: auto;
     }
     .caja__trasera-register{
         padding-left: 0px;
+        margin:auto;
     }
     
     .contenedor__login-register{
         position: relative;
-        max-width: 370px;
+        max-width: 330px;
+        height: 380px;
     }
 }
 
