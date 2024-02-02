@@ -191,7 +191,6 @@ function Log_In() {
             if (resultado.length > 0) {
             
                 if(resultado[0].password == password.value){
-                    location.href="catalogo.html"
                     console.log("Todo muy bien")
                 }else{
                     console.log("usuario o contraseña invalidos¡")
@@ -213,18 +212,23 @@ function Sign_Up(){
         password: Password_SignUp.value
     }
 
-    fetch(`http://localhost:3000/registrados`,{
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(Usuario_Nuevo)
+    if (Name_SignUp != '') {
+        console.log("todo muy good");  
+    } else {
+        console.log("el campo debe estar completo");    
+    }
 
+      fetch("http://localhost:3000/registrados", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(Usuario_Nuevo),
+      })
+        .then((r) => {
+          return r.json();
         })
-        .then(response => {
-            return response.json()
-        }).then(data => {
-            console.log(data.correo);
-            console.log(data.name);
+        .then((data) => {
+          console.log(data.Usuario_Nuevo);
         });
 }
