@@ -586,7 +586,7 @@ form{
 
 .contenedor__login-register form button{
     padding: 10px 40px;
-    margin-top: 40px;
+    margin-top: 30px;
     border: none;
     font-size: 14px;
     background: #D9B073;
@@ -617,7 +617,10 @@ form{
     display: none;
 }
 
-
+#Validacion_LogIn{
+    color: rgb(219, 70, 70);
+    padding: 30px 0px 0px 0px;
+}
 
 @media screen and (max-width: 767px){
       .contenedor__todo{

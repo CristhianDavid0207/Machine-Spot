@@ -2,56 +2,48 @@
   "registrados": [
     {
       "name": "lorena",
-      "usuario": "lorem",
       "email": "lorita@gmail.com",
       "password": "123456",
       "id": "a9cb"
     },
     {
       "name": "Luis",
-      "usuario": "guisepe",
       "email": "Guiso@gmail.com",
       "password": "guiso830",
       "id": "23aa"
     },
     {
       "name": "Luna",
-      "usuario": "Lopez",
       "email": "LunaLopez@gmail.com",
       "password": "12346",
       "id": "ee01"
     },
     {
       "name": "stefania",
-      "usuario": "Medina",
       "email": "Stefa@gmail.com",
       "password": "12456",
       "id": "04d7"
     },
     {
       "name": "Valeria",
-      "usuario": "Ruiz",
       "email": "Valecita@gmail.com",
       "password": "23456",
       "id": "ee46"
     },
     {
       "name": "Carlos",
-      "usuario": "Valencia",
       "email": "ValenciaCarlos@gmail.com",
       "password": "23926",
       "id": "5cdd"
     },
     {
       "name": "Felipe",
-      "usuario": "Mendoza",
       "email": "pipe@gmail.com",
       "password": "237526",
       "id": "8343"
     },
     {
       "name": "Mateo",
-      "usuario": "Jurado",
       "email": "Jurado@gmail.com",
       "password": "M1026",
       "id": "32d6"

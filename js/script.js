@@ -116,6 +116,7 @@ function Ingreso() {
 // Fetch
 let email = document.getElementById("email_LogIn");
 let password = document.getElementById("password_LogIn");
+let Validacion_LogIn = document.getElementById("Validacion_LogIn"); 
   function Log_In() {
     fetch("http://localhost:3000/registrados")
     .then((r) => r.json())
@@ -126,13 +127,17 @@ let password = document.getElementById("password_LogIn");
     if (resultado.length > 0) {
       if(resultado[0].password == password.value){
         console.log("Todo muy bien");
+        sessionStorage.setItem('auth', 1)
         sessionStorage.setItem("nombre", resultado[0].name);
+        location.href = '../index.html'
 
       } else {
         console.log("usuario o contraseña invalidos¡");
+         Validacion_LogIn.innerHTML = `<p>¡Hay un error! vuelve a intentarlo</p>`;
       }
     }else{
       console.log("No hay coincidencia");
+      Validacion_LogIn.innerHTML = `<p>¡El usuario no es existente!</p>`;
     }
     });
   }
@@ -202,13 +207,14 @@ let password = document.getElementById("password_LogIn");
     Login_modal.style.display = "none";
 
     // Dejar el input en blanco después de cerrar el login
-      Name_SignUp.value = "";
-      Email_SignUp.value = "";
-      Password_SignUp.value = "";
-  
-      email.value = "";
-      password.value = "";
+    Name_SignUp.value = "";
+    Email_SignUp.value = "";
+    Password_SignUp.value = "";
+
+    email.value = "";
+    password.value = "";
     
+    Validacion_LogIn.innerHTML = `<p></p>`;
   }
 
 
