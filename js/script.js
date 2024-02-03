@@ -118,8 +118,8 @@ let password = document.getElementById("password_LogIn");
     });
     if (resultado.length > 0) {
       if(resultado[0].password == password.value){
-        sessionStorage.setItem('auth', 1)
         console.log("Todo muy bien");
+        sessionStorage.setItem("nombre", resultado[0].name);
 
       } else {
         console.log("usuario o contraseña invalidos¡");
