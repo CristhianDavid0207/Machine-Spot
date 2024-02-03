@@ -440,6 +440,7 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     padding: 10px 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #D9B073;
     position: relative;
     margin-top: 65px;
@@ -490,6 +491,39 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     color: #D9B073;
 }
 
+.b-login {
+    color: #000;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+    bottom: 94px;
+    left: 181px;
+}
+
+.b-signup {
+    color: #000;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+    bottom: 52px;
+    left: 181px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .b-login {
+        position: relative;
+        bottom: 13px;
+        left: 135px;
+    } 
+    .b-signup {
+        position: relative;
+        bottom: 17px;
+        left: 138px;
+    } 
+}
+
+
 /*Formularios*/
 
 .contenedor__login-register{
@@ -503,6 +537,7 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     position: relative;
     /*La transicion va despues del codigo JS*/
     transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    justify-content: center;
 }
 
 .contenedor__login-register,
@@ -573,7 +608,7 @@ form{
 
 
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 767px){
       .contenedor__todo{
         top: 10px;
     }
@@ -581,6 +616,7 @@ form{
         position: relative;
         max-width: 330px;
         height: 330px;
+        padding: 0px 0px;
         margin: auto;
     }
     .caja__trasera-register{
@@ -656,5 +692,4 @@ form{
   .descriptionn{
       color: azure;
   }
-
 

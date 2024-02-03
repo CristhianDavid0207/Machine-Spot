@@ -98,14 +98,19 @@
         <div id="content_All" class="contenedor__todo">
             <div class="caja__trasera">
                 <div class="caja__trasera-login" style="display: block; opacity: 1;">
-                    <h3>Do you already have an account?</h3>
-                    <p>Log in to enter the page</p>
-                    <button id="btn__iniciar-sesion">Log in</button>
+                    <div class="body_trasera-login">
+                        <h3>Do you already have an account?</h3>
+                        <p>Log in to enter the page</p>
+                        <button id="btn__iniciar-sesion">Log in</button>
+                    </div>
                 </div>
                 <div class="caja__trasera-register" style="display: block; opacity: 1;">
-                    <h3>Do not you have an account yet?</h3>
-                    <p>Sign up so you can log in</p>
-                    <button type="button" id="btn__registrarse">Sign up</button>
+                    <div class="body_trasera-register">
+                        <i class="bi bi-x b-login" onclick="SalirLogin()"></i>
+                        <h3>Do not you have an account yet?</h3>
+                        <p>Sign up so you can log in</p>
+                        <button type="button" id="btn__registrarse">Sign up</button>
+                    </div>
                 </div>
             </div>
     
@@ -114,24 +119,25 @@
     
                 <!--Register-->
                 <form action="" class="formulario__register" style="display: none;">
+                    <i class="bi bi-x b-signup" onclick="SalirLogin()"></i>
                     <h2 class =" h2">Sign up</h2 class =" h2">
-                    <input type="text" id="Name_SignUp" class="" placeholder="Name">
-                    <input type="text" id="Email_SignUp" class="" placeholder="Email">        
-                    <input type="password" id="Password_SignUp" class="" placeholder="Password">
+                    <input type="text" id="Name_SignUp" class="form-control" placeholder="Name">
+                    <input type="text" id="Email_SignUp" class="form-control" placeholder="Email">        
+                    <input type="password" id="Password_SignUp" class="form-control" placeholder="Password">
                     <div class="Botones">
-                        <button type="button" id="btnSalir2" onclick="SalirLogin()">Close</button>
-                        <button type="button" onclick="Sign_Up()" >Sign up</button>
+                        
+                        <button type="button" onclick="Sign_Up()" id="btn_Sign">Sign up</button>
                     </div>
                 </form>
 
                  <!--Login-->
                 <form action="" class="formulario__login" style="display: block;">
                     <h2 class =" h2">Log in</h2 class =" h2">
-                    <input type="text" placeholder="Email" id="email_LogIn">
-                    <input type="password" placeholder="Password" id="password_LogIn">
+                    <input type="text" placeholder="Email" id="email_LogIn" class="form-control" >
+                    <input type="password" placeholder="Password" id="password_LogIn" class="form-control" >
                     <div class="Botones">
-                        <button type="button" id="btnSalir1" onclick="SalirLogin()">Close</button>
-                        <button type="button" onclick="Log_In()">Log in</button>
+                       
+                        <button type="button" onclick="Log_In()" id="btn_log" >Log in</button>
                     </div>
                 </form>
             </div>
