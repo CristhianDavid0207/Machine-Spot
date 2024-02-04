@@ -1,10 +1,11 @@
 /* traductor */
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
-    { pageLanguage: "en" },
+    { pageLanguage: "es" },
     "google_translate_element"
   );
 }
+
 //FUNCIONES DEL LOGIN
 //Ejecutando funciones
 document
@@ -129,7 +130,7 @@ let Validacion_LogIn = document.getElementById("Validacion_LogIn");
         console.log("Todo muy bien");
         sessionStorage.setItem('auth', 1)
         sessionStorage.setItem("nombre", resultado[0].name);
-        location.href = '../index.html'
+        window.location.href = '../index.html'
 
       } else {
         console.log("usuario o contraseña invalidos¡");
