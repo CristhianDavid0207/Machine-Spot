@@ -1,12 +1,38 @@
 /* traductor */
-.google_translate_element {
-    border-style: double;
-    border: 33px;
-    text-align: center;
-    padding-block-start: 33px;
-    background-position: center;
-    background-color: rgb(188, 171, 76);
-    padding: 33px;
+#google_translate_element {
+    position: fixed;
+    top: 10px; /* Ajusta la posición vertical según tus necesidades */
+    right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+    z-index: 1001; /* Asegura que esté por encima del navbar */
+}
+
+.goog-te-gadget {
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.goog-te-gadget-simple {
+    background-color:rgba(217, 176, 115, 1) !important;
+    border: 1px solid #fff !important;
+    border-radius: 5px;
+    padding: 5px 2px !important;
+}
+
+.goog-te-gadget-simple img {
+    display: none;
+}
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+    color: #fff !important;
+    font-family: "Kanit", sans-serif;
+    font-size: 0.8rem;
+    padding: 3px !important;
+    font-weight: bold;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+    display: none !important;
+    background-color: transparent;
 }
 
 /* Fuente de la letra*/
@@ -17,6 +43,7 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);    
 }
 
 /* NAVBAR */
@@ -726,7 +753,6 @@ form{
 }
 
 @media screen and (max-width: 767px) {
-    
     .section1{
         padding: 70px 30px 30px 30px; 
     }
