@@ -128,9 +128,9 @@ let Validacion_LogIn = document.getElementById("Validacion_LogIn");
     if (resultado.length > 0) {
       if(resultado[0].password == password.value){
         console.log("Todo muy bien");
-        sessionStorage.setItem('auth', 1)
         sessionStorage.setItem("nombre", resultado[0].name);
-        window.location.href = '../index.html'
+        sessionStorage.setItem("id", resultado[0].id);
+        window.location.href = './login.html'
 
       } else {
         console.log("usuario o contraseña invalidos¡");
@@ -169,7 +169,9 @@ let Validacion_LogIn = document.getElementById("Validacion_LogIn");
         return r.json();
       })
       .then((data) => {
-        location.href = "../index.html";
+        sessionStorage.setItem("nombre", Name_SignUp.value);
+        sessionStorage.setItem("id", data.id);
+        location.href = "./login.html";
         return data.Usuario_Nuevo;
       });
       
