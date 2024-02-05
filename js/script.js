@@ -129,7 +129,9 @@ let Validacion_LogIn = document.getElementById("Validacion_LogIn");
       if(resultado[0].password == password.value){
         console.log("Todo muy bien");
         sessionStorage.setItem("nombre", resultado[0].name);
-        sessionStorage.setItem("id", resultado[0].id);
+          sessionStorage.setItem("id", resultado[0].id);
+          sessionStorage.setItem("email", resultado[0].email);
+          sessionStorage.setItem("password", resultado[0].password);
         window.location.href = './login.html'
 
       } else {
@@ -138,7 +140,7 @@ let Validacion_LogIn = document.getElementById("Validacion_LogIn");
       }
     }else{
       console.log("No hay coincidencia");
-      Validacion_LogIn.innerHTML = `<p>¡El usuario no es existente!</p>`;
+      Validacion_LogIn.innerHTML = `<p>¡El usuario no es existe!</p>`;
     }
     });
   }
@@ -169,8 +171,10 @@ let Validacion_LogIn = document.getElementById("Validacion_LogIn");
         return r.json();
       })
       .then((data) => {
-        sessionStorage.setItem("nombre", Name_SignUp.value);
+        essionStorage.setItem("nombre", Name_SignUp.value);
         sessionStorage.setItem("id", data.id);
+        sessionStorage.setItem("email", data.email);
+        sessionStorage.setItem("password", data.password);
         location.href = "./login.html";
         return data.Usuario_Nuevo;
       });
