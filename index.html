@@ -26,15 +26,12 @@
 
   <!-- Link JS -->
   <script src="./js/script.js" defer ></script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
   
   <title>Home | Machine-Spot </title>
 </head>
 
-<body id="home">
-  <!-- traductor -->
-  <div id="google_translate_element" class="google_translate_element"></div>
-  
+<body id="home">  
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-md navbar-light">
     <div class="container-fluid">
@@ -44,7 +41,7 @@
       <div class="collapse navbar-collapse" id="navbar-toggler">
         <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
           <img src="./img/LogoWhite.png" width="150" alt="logo">
-          <h1 class="nav-item d-inline-flex">Machine Spot</h1>
+          <h1 class="nav-item d-inline-flex notranslate">Machine Spot</h1>
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
@@ -61,11 +58,15 @@
           </li>
           <li class="nav-item">
             <a type="button" class="nav-link login"  href="#" onclick="Ingreso()" >Login</a>
-          </li>
+          </li>         
         </ul>
+        <!-- Traductor -->
+        <div id="google_translate_element" class="google" data-text="Translate"></div>
       </div>
     </div>
   </nav>
+
+ 
 
   <!-- Carrucel de fondo -->
   <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">

@@ -7,3 +7,7 @@
 
 
 http://localhost:3000/registrados?usuario=albertico69
+
+
+como quitar barra despues de cambiar idioma
+como acceder para cambiar el contenido de seleccione idioma
