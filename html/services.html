@@ -28,6 +28,9 @@
     <!-- link CSS -->
     <link rel="stylesheet" href="../CSS/home.css">
     
+    <!-- link CSS -->
+    <link rel="stylesheet" href="../CSS/home.css">
+    
     <title>Services | Machine-Spot </title>
 </head>
 <body id="services">
@@ -108,6 +111,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
+                <div class="col-md-4 ">
                     <div class="card1 p-3 w-100">
                         <img class="img-fluid" src="https://media.istockphoto.com/id/636821270/es/foto/llaves-%C3%A1ngulo-y-conector-en-t.jpg?s=1024x1024&w=is&k=20&c=SS6Z6dI_pKQcKJtZh_xre60YR5qKLmm9HwWWftQOHbI=" alt="">
                         <div class="card-body">
@@ -123,6 +127,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 ">
                 <div class="col-md-4 ">
                     <div class="card1 p-3">
                         <img class="img-fluid" src="https://media.istockphoto.com/id/522579623/es/foto/herramientas-de-trabajo.jpg?s=1024x1024&w=is&k=20&c=o-xttILntcVFJd-1pkZux-lpyaRNjHhwTPYoCoCEKYE=" alt="">
@@ -140,6 +145,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
+                <div class="col-md-4 ">
                     <div class="card1 p-3">
                         <img class="img-fluid" src="https://cdn.pixabay.com/photo/2010/12/13/10/01/celsius-2125_1280.jpg" alt="">
                         <div class="card-body">
@@ -156,6 +162,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
+                <div class="col-md-4 ">
                     <div class="card1 p-3 ">
                         <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/12/11/20/03/spanner-3013129_1280.jpg" alt="">
                         <div class="card-body">
@@ -171,6 +178,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 ">
                 <div class="col-md-4 ">
                     <div class="card1 p-3">
                         <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/03/20/19/38/hammer-682767_1280.jpg" alt="">
@@ -236,6 +244,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 ">
+                <div class="col-md-4 ">
                     <div class="card1 p-3 h-100">
                         <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/12/08/21/42/tools-1083796_1280.jpg" alt="">
                         <div class="card-body">
@@ -251,6 +260,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 ">
                 <div class="col-md-4 ">
                     <div class="card1 p-3 h-100">
                         <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/08/15/21/32/toolbox-2645700_1280.jpg" alt="">
@@ -302,8 +312,19 @@
                         <p>Log in to enter the page</p>
                         <button id="btn__iniciar-sesion">Log in</button>
                     </div>
+                    <div class="body_trasera-login">
+                        <h3>Do you already have an account?</h3>
+                        <p>Log in to enter the page</p>
+                        <button id="btn__iniciar-sesion">Log in</button>
+                    </div>
                 </div>
                 <div class="caja__trasera-register" style="display: block; opacity: 1;">
+                    <div class="body_trasera-register">
+                        <i class="bi bi-x b-login" onclick="SalirLogin()"></i>
+                        <h3>Do not you have an account yet?</h3>
+                        <p>Sign up so you can log in</p>
+                        <button type="button" id="btn__registrarse">Sign up</button>
+                    </div>
                     <div class="body_trasera-register">
                         <i class="bi bi-x b-login" onclick="SalirLogin()"></i>
                         <h3>Do not you have an account yet?</h3>
@@ -319,11 +340,17 @@
                 <!--Register-->
                 <form action="" class="formulario__register" style="display: none;">
                     <i class="bi bi-x b-signup" onclick="SalirLogin()"></i>
+                    <i class="bi bi-x b-signup" onclick="SalirLogin()"></i>
                     <h2 class =" h2">Sign up</h2 class =" h2">
                     <input type="text" id="Name_SignUp" class="form-control" placeholder="Name">
                     <input type="text" id="Email_SignUp" class="form-control" placeholder="Email">        
                     <input type="password" id="Password_SignUp" class="form-control" placeholder="Password">
+                    <input type="text" id="Name_SignUp" class="form-control" placeholder="Name">
+                    <input type="text" id="Email_SignUp" class="form-control" placeholder="Email">        
+                    <input type="password" id="Password_SignUp" class="form-control" placeholder="Password">
                     <div class="Botones">
+                        
+                        <button type="button" onclick="Sign_Up()" id="btn_Sign">Sign up</button>
                         
                         <button type="button" onclick="Sign_Up()" id="btn_Sign">Sign up</button>
                     </div>
@@ -334,7 +361,11 @@
                     <h2 class =" h2">Log in</h2 class =" h2">
                     <input type="text" placeholder="Email" id="email_LogIn" class="form-control" >
                     <input type="password" placeholder="Password" id="password_LogIn" class="form-control" >
+                    <input type="text" placeholder="Email" id="email_LogIn" class="form-control" >
+                    <input type="password" placeholder="Password" id="password_LogIn" class="form-control" >
                     <div class="Botones">
+                       
+                        <button type="button" onclick="Log_In()" id="btn_log" >Log in</button>
                        
                         <button type="button" onclick="Log_In()" id="btn_log" >Log in</button>
                     </div>
