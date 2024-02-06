@@ -1,13 +1,20 @@
 /* DECLARACIÒN DE CONXTANTE */
-const APP_URL = "file:///home/riwip5-047/Desktop/Machine-Spot/html/";
+// const APP_URL = "https://cristhiandavid0207.github.io/Machine-Spot/html/";
+const APP_URL = "file:///C:/Users/123/Desktop/Machine-Spot/html/";
+
 
 /* traductor */
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en,es', 
-  includedLanguages: 'es,en,fr', 
-  layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 
-  'google_translate_element');
-}    
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: "en,es",
+      includedLanguages: "es,en,fr",
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      gaTrack: true,
+    },
+    "google_translate_element"
+  );
+}
 
 //FUNCIONES DEL LOGIN
 //Ejecutando funciones
