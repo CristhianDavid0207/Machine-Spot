@@ -890,3 +890,7 @@ form{
     background:#bd9456;
 }
 
+/* Modal de eliminar cuenta */
+#Sure{
+    display: none;
+}

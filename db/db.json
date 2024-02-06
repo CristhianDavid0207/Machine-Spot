@@ -43,12 +43,6 @@
       "id": "8343"
     },
     {
-      "name": "Mateo",
-      "email": "Jurado@gmail.com",
-      "password": "M1026",
-      "id": "32d6"
-    },
-    {
       "id": "41d4",
       "name": "lopez",
       "email": "erdtd@gmail.com",
@@ -59,19 +53,6 @@
       "name": "Robinsonn",
       "email": "Robin@gmail.com",
       "password": "r937f"
-    },
-    {
-      "id": "01a4",
-      "name": "cuchita",
-      "email": "cucha@gmail.com",
-      "password": "12345"
-    },
-    {
-      "id": "8995",
-      "name": "maria",
-      "email": "maria@gmail.com",
-      "password": "rj45i"
     }
-    
   ]
 }
