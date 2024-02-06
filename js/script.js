@@ -3,16 +3,11 @@ const APP_URL = "file:///home/riwip5-047/Desktop/Machine-Spot/html/";
 
 /* traductor */
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: "en,es",
-      includedLanguages: "es,en",
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-      gaTrack: true,
-    },
-    "google_translate_element"
-  );
-}
+  new google.translate.TranslateElement({pageLanguage: 'en,es', 
+  includedLanguages: 'es,en,fr', 
+  layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 
+  'google_translate_element');
+}    
 
 //FUNCIONES DEL LOGIN
 //Ejecutando funciones
