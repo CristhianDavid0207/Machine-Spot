@@ -333,7 +333,7 @@
                 <div id="Parte_Delete">
                     <a href="../index.html" onclick="Cerrar_sesion()" id="Close_Session">Cerrar sesión</a>
                     <br>
-                    <a href="../index.html" onclick="Eliminar()" id="Delete">Eliminar cuenta</a>
+                    <a href="#" onclick="Llamar_Delete()" id="Delete">Eliminar cuenta</a>
                 </div>
             </div>
             <div class="modal-footer">
@@ -342,5 +342,20 @@
           </div>
         </div>
       </div>
+
+    <div id="Sure" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-body">
+            <p style="text-align: center;">Are you sure of delete you account?</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="sure_close()">Close</button>
+            <button type="button" class="btn btn-delete" onclick="Eliminar()">Delete</button>
+        </div>
+        </div>
+    </div>
+    </div>      
+      
 </body>
 </html>

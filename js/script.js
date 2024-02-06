@@ -1,15 +1,18 @@
+/* DECLARACIÒN DE CONXTANTE */
+const APP_URL = "file:///home/riwip5-047/Desktop/Machine-Spot/html/";
+
 /* traductor */
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en,es', 
-  includedLanguages: 'es,en', 
-  layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 
-  'google_translate_element');
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: "en,es",
+      includedLanguages: "es,en",
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      gaTrack: true,
+    },
+    "google_translate_element"
+  );
 }
-
-
-
-
-    
 
 //FUNCIONES DEL LOGIN
 //Ejecutando funciones
@@ -118,136 +121,113 @@ function Ingreso() {
   Login_modal.style.display = "block";
 }
 
-
 // Fetch
 let email = document.getElementById("email_LogIn");
 let password = document.getElementById("password_LogIn");
-let Validacion_LogIn = document.getElementById("Validacion_LogIn"); 
-  function Log_In() {
-    fetch("http://localhost:3000/registrados")
+let Validacion_LogIn = document.getElementById("Validacion_LogIn");
+
+function Log_In() {
+  fetch("http://localhost:3000/registrados")
     .then((r) => r.json())
     .then((d) => {
       let resultado = d.filter(function (element) {
-        return element.email == email.value;   
-    });
-    if (resultado.length > 0) {
-      if(resultado[0].password == password.value){
-        console.log("Todo muy bien");
-        sessionStorage.setItem("nombre", resultado[0].name);
+        return element.email == email.value;
+      });
+      console.log(resultado);
+      if (resultado.length > 0) {
+        if (resultado[0].password == password.value) {
+          sessionStorage.setItem("nombre", resultado[0].name);
           sessionStorage.setItem("id", resultado[0].id);
           sessionStorage.setItem("email", resultado[0].email);
           sessionStorage.setItem("password", resultado[0].password);
-        window.location.href = './login.html'
-
+          location.href = APP_URL + "login.html";
+        } else {
+          console.log("usuario o contraseña invalidos¡");
+          Validacion_LogIn.innerHTML = `<p>¡Hay un error! vuelve a intentarlo</p>`;
+        }
       } else {
-        console.log("usuario o contraseña invalidos¡");
-         Validacion_LogIn.innerHTML = `<p>¡Hay un error! vuelve a intentarlo</p>`;
+        console.log("No hay coincidencia");
+        Validacion_LogIn.innerHTML = `<p>¡El usuario no es existe!</p>`;
       }
-    }else{
-      console.log("No hay coincidencia");
-      Validacion_LogIn.innerHTML = `<p>¡El usuario no es existe!</p>`;
-    }
     });
-  }
-  
+}
 
-  // METODO POST(CREACION DE USUARIOS)
-    // Traer los id de los inputs del Sign up
-  let Name_SignUp = document.getElementById("Name_SignUp");
-  let Email_SignUp = document.getElementById("Email_SignUp");
-  let Password_SignUp = document.getElementById("Password_SignUp");
-  function Sign_Up() {
-    
-    Usuario_Nuevo = {
-      name: Name_SignUp.value,
-      email: Email_SignUp.value,
-      password: Password_SignUp.value,
-    };
-    if (Name_SignUp.value != "" && Email_SignUp.value != "" && Password_SignUp.value != "") {
-      
-      fetch("http://localhost:3000/registrados", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(Usuario_Nuevo),
-      })
+// METODO POST(CREACION DE USUARIOS)
+// Traer los id de los inputs del Sign up
+let Name_SignUp = document.getElementById("Name_SignUp");
+let Email_SignUp = document.getElementById("Email_SignUp");
+let Password_SignUp = document.getElementById("Password_SignUp");
+function Sign_Up() {
+  Usuario_Nuevo = {
+    name: Name_SignUp.value,
+    email: Email_SignUp.value,
+    password: Password_SignUp.value,
+  };
+  if (
+    Name_SignUp.value != "" &&
+    Email_SignUp.value != "" &&
+    Password_SignUp.value != ""
+  ) {
+    fetch("http://localhost:3000/registrados", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(Usuario_Nuevo),
+    })
       .then((r) => {
         return r.json();
       })
       .then((data) => {
-        essionStorage.setItem("nombre", Name_SignUp.value);
+        sessionStorage.setItem("nombre", Name_SignUp.value);
         sessionStorage.setItem("id", data.id);
         sessionStorage.setItem("email", data.email);
         sessionStorage.setItem("password", data.password);
-        location.href = "./login.html";
+
+        location.href = APP_URL + "login.html";
+
         return data.Usuario_Nuevo;
       });
-      
+  } else {
+    console.log("Completar todos los campos!");
+
+    if (Name_SignUp.value == "") {
+      Name_SignUp.classList.remove("is-valid");
+      Name_SignUp.classList.add("is-invalid");
     } else {
-      console.log("Completar todos los campos!");
-      
-      if(Name_SignUp.value == ""){
-        Name_SignUp.classList.remove("is-valid");
-        Name_SignUp.classList.add("is-invalid");   
-      }else{
-        Name_SignUp.classList.remove("is-invalid");
-        Name_SignUp.classList.add("is-valid");  
-      }
-      
-      if(Email_SignUp.value == ""){
-        Email_SignUp.classList.remove("is-valid");
-        Email_SignUp.classList.add("is-invalid");
-      }else{
-        Email_SignUp.classList.remove("is-invalid");
-        Email_SignUp.classList.add("is-valid");  
-      }
-      
-      if(Password_SignUp.value == ""){
-        Password_SignUp.classList.remove("is-valid");
-        Password_SignUp.classList.add("is-invalid");
-      }else{
-        Password_SignUp.classList.remove("is-invalid");
-        Password_SignUp.classList.add("is-valid");  
-      }
+      Name_SignUp.classList.remove("is-invalid");
+      Name_SignUp.classList.add("is-valid");
+    }
+
+    if (Email_SignUp.value == "") {
+      Email_SignUp.classList.remove("is-valid");
+      Email_SignUp.classList.add("is-invalid");
+    } else {
+      Email_SignUp.classList.remove("is-invalid");
+      Email_SignUp.classList.add("is-valid");
+    }
+
+    if (Password_SignUp.value == "") {
+      Password_SignUp.classList.remove("is-valid");
+      Password_SignUp.classList.add("is-invalid");
+    } else {
+      Password_SignUp.classList.remove("is-invalid");
+      Password_SignUp.classList.add("is-valid");
     }
   }
-  
+}
 
-  // Función para cerrar el cuestionario
-  function SalirLogin() {
-    Login_modal.style.display = "none";
+// Función para cerrar el cuestionario
+function SalirLogin() {
+  Login_modal.style.display = "none";
 
-    // Dejar el input en blanco después de cerrar el login
-    Name_SignUp.value = "";
-    Email_SignUp.value = "";
-    Password_SignUp.value = "";
+  // Dejar el input en blanco después de cerrar el login
+  Name_SignUp.value = "";
+  Email_SignUp.value = "";
+  Password_SignUp.value = "";
 
-    email.value = "";
-    password.value = "";
-    
-    Validacion_LogIn.innerHTML = `<p></p>`;
-  }
+  email.value = "";
+  password.value = "";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  Validacion_LogIn.innerHTML = `<p></p>`;
+}
