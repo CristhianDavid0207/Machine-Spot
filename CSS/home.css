@@ -1,9 +1,15 @@
 /* traductor */
-#google_translate_element {
+.google {
     position: fixed;
     top: 10px; /* Ajusta la posición vertical según tus necesidades */
     right: 10px; /* Ajusta la posición horizontal según tus necesidades */
     z-index: 1001; /* Asegura que esté por encima del navbar */
+}
+
+.google-login {
+    position: relative;
+    top: 0px;
+    left: 20px;
 }
 
 .goog-te-gadget {
@@ -32,7 +38,10 @@
 
 .VIpgJd-ZVi9od-ORHb-OEVmcd {
     display: none !important;
-    background-color: transparent;
+}
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b {
+    background-color: red !important;
 }
 
 /* Fuente de la letra*/
@@ -43,7 +52,8 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);    
+    background-color: rgba(0, 0, 0, 0.6); 
+    top: 0 !important;   
 }
 
 /* NAVBAR */
@@ -237,7 +247,6 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
 
 
 /* Mapa */
-
 .tituloLocation{
     font-family: "Kanit", sans-serif;
     color: rgba(217, 176, 115, 1);
@@ -249,11 +258,15 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     text-align: center;
 }
 
+.pos {
+    background-color: #282827;
+}
+
 .Mapa{
     border-radius: 10px;
     box-shadow: 2px 2px 20px rgba(217, 176, 115, 1);
     margin-bottom: 50px;
-}   
+} 
 
   /* Footer */
 .info-footer{
@@ -691,6 +704,7 @@ form{
     font-family: "Kanit", sans-serif;
     color: rgba(217, 176, 115, 1);
     padding: 160px 100px 30px 100px; 
+    background-color: #282827;
 }
 
 .card1 {

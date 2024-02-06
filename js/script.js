@@ -1,15 +1,10 @@
 /* traductor */
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en,es', 
-  includedLanguages: 'es,en', 
+  includedLanguages: 'es,en,fr', 
   layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 
   'google_translate_element');
-}
-
-
-
-
-    
+}    
 
 //FUNCIONES DEL LOGIN
 //Ejecutando funciones
