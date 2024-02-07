@@ -162,16 +162,19 @@ function Log_In() {
 let Name_SignUp = document.getElementById("Name_SignUp");
 let Email_SignUp = document.getElementById("Email_SignUp");
 let Password_SignUp = document.getElementById("Password_SignUp");
+
 function Sign_Up() {
   Usuario_Nuevo = {
     name: Name_SignUp.value,
     email: Email_SignUp.value,
-    password: Password_SignUp.value,
+    password:  Password_SignUp.value,
   };
   if (
     Name_SignUp.value != "" &&
     Email_SignUp.value != "" &&
     Password_SignUp.value != ""
+
+
   ) {
     fetch("http://localhost:3000/registrados", {
       method: "POST",
