@@ -1,8 +1,3 @@
-/* DECLARACIÒN DE CONXTANTE */
-// const APP_URL = "https://cristhiandavid0207.github.io/Machine-Spot/html/";
-const APP_URL = "file:///C:/Users/123/Desktop/Machine-Spot/html/";
-
-
 /* traductor */
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
@@ -127,6 +122,10 @@ function Ingreso() {
 let email = document.getElementById("email_LogIn");
 let password = document.getElementById("password_LogIn");
 let Validacion_LogIn = document.getElementById("Validacion_LogIn");
+//Enlace de la página
+let Pagina_Enlace = location.href;
+let resultado_Enlace = Pagina_Enlace.includes("index.html");
+
 
 function Log_In() {
   fetch("http://localhost:3000/registrados")
@@ -142,7 +141,11 @@ function Log_In() {
           sessionStorage.setItem("id", resultado[0].id);
           sessionStorage.setItem("email", resultado[0].email);
           sessionStorage.setItem("password", resultado[0].password);
-          location.href = APP_URL + "login.html";
+          if (resultado_Enlace == true) {
+            location.href = "./html/login.html";
+          } else {
+            location.href = "./login.html";
+          }
         } else {
           console.log("usuario o contraseña invalidos¡");
           Validacion_LogIn.innerHTML = `<p>¡Hay un error! vuelve a intentarlo</p>`;
@@ -185,8 +188,11 @@ function Sign_Up() {
         sessionStorage.setItem("id", data.id);
         sessionStorage.setItem("email", data.email);
         sessionStorage.setItem("password", data.password);
-
-        location.href = APP_URL + "login.html";
+        if (resultado_Enlace == true) {
+          location.href = "./html/login.html";
+        } else {
+          location.href = "./login.html";
+        }
 
         return data.Usuario_Nuevo;
       });
