@@ -35,6 +35,7 @@ function Cerrar_sesion() {
   sessionStorage.removeItem("id");
   sessionStorage.removeItem("email");
   sessionStorage.removeItem("password");
+  location.href = "../index.html";
 }
 
 let Name_Put = document.getElementById("Name_Put");
@@ -76,7 +77,7 @@ function ActualizarRegistro() {
     sessionStorage.removeItem("email");
     sessionStorage.setItem("email", datos_nuevos.email);
 
-     sessionStorage.removeItem("password");
+    sessionStorage.removeItem("password");
     sessionStorage.setItem("password", datos_nuevos.password);
 
 
@@ -90,7 +91,6 @@ function Llamar_Delete() {
 }
 function sure_close() {
   Sure.style.display = "none";
-  Actualizar_datos.style.display = "block";
 }
 
 // ELIMINAR DATOS

@@ -53,10 +53,20 @@
                     <a class="nav-link" href="./locationlogin.html">Location</a>
                     </li>
                     <li class="nav-item" id="Usuario_Perfil">
-                    <a class="nav-link" href="#" onclick="Perfil()"><i class="bi bi-person-circle" id="Nombre_Usuario"> </i></a>
+                        <li class="nav-item" id="Usuario_Perfil">
+                            <a class="nav-link" href="./login.html"><i class="bi bi-person-circle" id="Nombre_Usuario"> </i></a>
+                            <ul class="login-option">
+                                <li><a class="option-items" href="#" onclick="Perfil()">Update</a></li>
+                                <li><a class="option-items" href="#" onclick="Llamar_Delete()">Delete Account</a></li>
+                                <li><a class="option-items" href="#" onclick="Cerrar_sesion()">Log Out</a></li>
+                            </ul>
+                        </li>
                     </li>
                     <li>
-                        <a class="nav-link" href="#"><i class="bi bi-cart3"></i></a>
+                        <a class="nav-link" href="./cart.html">
+                            <i class="bi bi-cart3"></i>
+                            <span id="cuenta-carrito">0</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -329,43 +339,38 @@
              </div>
      </div>
 
-<!-- modal para acceder al perfil -->
-     <div id="Actualizar_datos" class="modal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content" id="content_Perfil">
-            <div class="modal_header">
-                <div class="header_datos">
-                    <div id="header_titulo">
-                        <h5 class="modal-title">Change data</h5>
-                        <p>Update your personal information</p>
-                    </div>
-                    <div id="header_close">
-                        <i class="bi bi-x" id="Put_close" onclick="Close()"></i>
-                    </div>
+   <!-- modal para acceder al perfil -->
+   <div id="Actualizar_datos" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" id="content_Perfil">
+        <div class="modal_header">
+            <div class="header_datos">
+                <div id="header_titulo">
+                    <h5 class="modal-title">Change data</h5>
+                    <p>Update your personal information</p>
+                </div>
+                <div id="header_close">
+                    <i class="bi bi-x" id="Put_close" onclick="Close()"></i>
                 </div>
             </div>
-            <div class="modal-body">
-                <div id="Parte_Put">
-                    <input type="text" id="Name_Put" class="form-control mb-3" placeholder="Name">
-                    <input type="text" id="Email_Put" class="form-control mb-3" placeholder="Email">        
-                    <input type="password" id="Password_Put" class="form-control mb-3" placeholder="Password">
-                </div>
-                <div id="putConfirmacion">
-                    <!-- div eb donde se pone la confirmacion del cambio -->
-                </div>
-                <div id="Parte_Delete">
-                    <a href="../index.html" onclick="Cerrar_sesion()" id="Close_Session">Log out</a>
-                    <br>
-                    <a href="#" onclick="Llamar_Delete()" id="Delete">Delete account</a>
-                </div>
-                <div id="Put_Parte_btn">
-                    <button type="button" class="btn" id="btn_Put" onclick="ActualizarRegistro()" >Save changes</button>
-                </div>
-            </div>
-           
-          </div>
         </div>
+        <div class="modal-body">
+            <div id="Parte_Put">
+                <input type="text" id="Name_Put" class="form-control mb-3" placeholder="Name">
+                <input type="text" id="Email_Put" class="form-control mb-3" placeholder="Email">        
+                <input type="password" id="Password_Put" class="form-control mb-3" placeholder="Password">
+            </div>
+             <div id="putConfirmacion">
+                <!-- div en donde se pone la confirmacion del cambio -->
+            </div>
+            <div id="Put_Parte_btn">
+                <button type="button" class="btn" id="btn_Put" onclick="ActualizarRegistro()" >Save changes</button>
+            </div>
+        </div>
+       
       </div>
+    </div>
+  </div>
 
       <!-- Modal para la verificación de eliminar cuenta -->
     <div id="Sure" class="modal" tabindex="-1">
