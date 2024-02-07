@@ -26,6 +26,7 @@ function Perfil() {
 }
 function Close() {
   Actualizar_datos.style.display = "none";
+  window.location.reload(); 
 }
 
 //Función para cerrar sesión(Eliminar session storage)
@@ -67,6 +68,17 @@ function ActualizarRegistro() {
   .then((data) => {
     putConfirmacion.innerHTML = `<p>¡Changes have been saved!</p>`;
     console.log("LLe");
+
+    // Cambiar datos en el session storage
+    sessionStorage.removeItem("nombre");
+    sessionStorage.setItem("nombre", datos_nuevos.name);
+
+    sessionStorage.removeItem("email");
+    sessionStorage.setItem("email", datos_nuevos.email);
+
+     sessionStorage.removeItem("password");
+    sessionStorage.setItem("password", datos_nuevos.password);
+
 
   });
 }
