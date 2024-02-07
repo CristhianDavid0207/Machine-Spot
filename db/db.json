@@ -1,7 +1,7 @@
 {
   "registrados": [
     {
-      "name": "lorena",
+      "name": "lorena sadsa",
       "email": "lorita@gmail.com",
       "password": "123456",
       "id": "a9cb"
@@ -53,6 +53,12 @@
       "email": "rosa@gmail.com",
       "password": "456",
       "id": "1b2a"
+    },
+    {
+      "id": "0105",
+      "name": "asdada",
+      "email": "dsadsada",
+      "password": "sadsa"
     }
   ]
 }

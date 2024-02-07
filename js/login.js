@@ -40,6 +40,7 @@ let Name_Put = document.getElementById("Name_Put");
 let Email_Put = document.getElementById("Email_Put");
 let Password_Put = document.getElementById("Password_Put");
 
+
 function Valor_Input() {
   Name_Put.value = nombre_session;
   Email_Put.value = email_session;
@@ -66,7 +67,6 @@ function ActualizarRegistro() {
   })
   .then((data) => {
     putConfirmacion.innerHTML = `<p>¡Changes have been saved!</p>`;
-    console.log("LLe");
 
   });
 }
