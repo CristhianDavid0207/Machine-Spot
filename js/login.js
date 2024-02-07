@@ -1,5 +1,3 @@
-const APP_URL = "file:///home/riwip5-047/Desktop/Machine-Spot/html/";
-
 //Obtener el nombre del session storage
 let nombre_session = sessionStorage.getItem("nombre");
 let email_session = sessionStorage.getItem("email");
@@ -28,7 +26,6 @@ function Perfil() {
 }
 function Close() {
   Actualizar_datos.style.display = "none";
-  Sure.style.display = "block";
 }
 
 //Función para cerrar sesión(Eliminar session storage)
@@ -75,8 +72,8 @@ function Llamar_Delete() {
   Sure.style.display = "block";
 }
 function sure_close() {
-    Sure.style.display = "none";
-     Actualizar_datos.style.display = "block";
+  Sure.style.display = "none";
+  Actualizar_datos.style.display = "block";
 }
 
 // ELIMINAR DATOS
@@ -91,7 +88,10 @@ function Eliminar() {
     sessionStorage.removeItem("id");
     sessionStorage.removeItem("email");
     sessionStorage.removeItem("password");
-    location.href = APP_URL + "../index.html";
+    location.href = "../index.html";
     return response.json();
   });
 }
+
+let body_Sure = document.getElementById("body_Sure");
+body_Sure.innerHTML = `<b><h4 style="text-align: center;">${nombre_session}, Are you sure of delete you account?</h4></b>`;

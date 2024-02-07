@@ -874,18 +874,57 @@ form{
     background-color: rgba(0,0,0,0.4); 
 }
 
+#content_Perfil{
+    background:#282827;
+    color: #fff;
+    border: 0.5px solid #5a5a59;
+    box-shadow: rgba(241, 238, 238, 0.09) 0px 10px 12px;
+}
+
+#content_Perfil input{
+    background:#4b4b4a;
+    color: #fff;
+    border: 0.5px solid #5a5a59;
+    box-shadow: rgba(136, 136, 136, 0.09) 0px 10px 12px;
+}
+
+#Put_close{
+    font-size: 20px;
+}
+
+#content_Perfil placeholder{
+    color: #fff;
+}
+
+#Close_Perfil{
+    color: #fff;
+}
+
 #Parte_Delete{
     text-align: center;
 }
 
 #Parte_Delete a{
-    color: rgb(240, 36, 36);
+    color: #8d39fa;
+}
+
+#btn_Put{
+    background: #bd9456;
+    color: #fff;
+    border: 0.5px solid #f0f0e6;
+    margin-left: 173px;
+    margin-top: 10px;
+
 }
 
 .header_datos{
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-left: auto;
 }
+
+
 
 .modal-footer button{
     padding: 8px 18px;
@@ -907,4 +946,25 @@ form{
 /* Modal de eliminar cuenta */
 #Sure{
     display: none;
+    margin-top: 200px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    margin-top: auto;
+}
+
+#dialog_Sure{
+    margin-top: 150px;
+}
+
+#Contenido_Sure{
+    height: 160px;
+    background:#282827;
+    color: #fff;
+    border: 0.5px solid #5a5a59;
+}
+
+#footer_Sure{
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
