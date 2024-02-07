@@ -40,10 +40,6 @@
     display: none !important;
 }
 
-.VIpgJd-ZVi9od-vH1Gmf-ibnC6b {
-    background-color: red !important;
-}
-
 /* Fuente de la letra*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -140,6 +136,25 @@ body, html { /* Quitando margenes predeterminadas a la pagina */
     border-radius: 4px;      
     transition: color 1s ease, text-shadow 1s ease, transform 1s ease , background 1s ease;
 }
+
+#cuenta-carrito {
+    background-color: rgba(217, 176, 115, 1);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+    font-size: 0.8rem;
+    font-family: "Kanit", sans-serif;
+}
+
+#cuenta-carrito:hover {
+    background-color: #fff;
+    color: rgba(217, 176, 115, 1);
+}
+
 
 @media screen and (max-width: 767px) {
     .navbar-brand {
@@ -983,12 +998,23 @@ form{
     top: 60%;
     margin: 10px;
     padding: 20px;
-    background-color: red;
-    /* display: none; */
+    background-color: rgba(217, 176, 115, 1);
     float: right;
     list-style-type: none;
+    border-radius: 5px;
+    display: none;
+    right: 16px;
 }
 
 .nav-item:hover .login-option {
     display: block;
+}
+
+.option-items {
+    color: #fff;
+    text-decoration: none;
+}
+
+.option-items:hover {
+    background-color: rgb(169, 139, 93); /* Cambiar el color de fondo al pasar el ratón */
 }
