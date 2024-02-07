@@ -52,7 +52,15 @@
                     <a class="nav-link" href="./locationlogin.html">Location</a>
                     </li>
                     <li class="nav-item" id="Usuario_Perfil">
-                    <a class="nav-link" href="#" onclick="Perfil()"><i class="bi bi-person-circle" id="Nombre_Usuario"> </i></a>
+                        <a class="nav-link" href="#"><i class="bi bi-person-circle" id="Nombre_Usuario"> </i></a>
+                        <ul class="login-option">
+                            <li><a class="option-items" href="#" onclick="Perfil()">Update</a></li>
+                            <li><a class="option-items" href="#" onclick="Llamar_Delete()">Delete Account</a></li>
+                            <li><a class="option-items" href="#" onclick="Cerrar_sesion()">Log Out</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="bi bi-cart3"></i></a>
                     </li>
                 </ul>
             </div>
@@ -111,11 +119,6 @@
                     <input type="password" id="Password_Put" class="form-control mb-3" placeholder="Password">
                 </div>
                 <div id="Put_Confirmacion">Los cambios se han guardado</div>
-                <div id="Parte_Delete">
-                    <a href="../index.html" onclick="Cerrar_sesion()" id="Close_Session">Log out</a>
-                    <br>
-                    <a href="#" onclick="Llamar_Delete()" id="Delete">Delete account</a>
-                </div>
                 <div id="Put_Parte_btn">
                     <button type="button" class="btn" id="btn_Put" onclick="ActualizarRegistro()" >Save changes</button>
                 </div>
