@@ -19,9 +19,9 @@
       "id": "04d7"
     },
     {
-      "name": "Valeria",
+      "name": "Valeria Maria",
       "email": "Valecita@gmail.com",
-      "password": "23456",
+      "password": "23456k",
       "id": "ee46"
     },
     {
@@ -47,6 +47,12 @@
       "name": "Robinsonn",
       "email": "Robin@gmail.com",
       "password": "r937f"
+    },
+    {
+      "name": "Rosa",
+      "email": "rosa@gmail.com",
+      "password": "456",
+      "id": "1b2a"
     }
   ]
 }

@@ -148,11 +148,11 @@ function Log_In() {
           }
         } else {
           console.log("usuario o contraseña invalidos¡");
-          Validacion_LogIn.innerHTML = `<p>¡Hay un error! vuelve a intentarlo</p>`;
+          Validacion_LogIn.innerHTML = `<p>There is an error! try again</p>`;
         }
       } else {
         console.log("No hay coincidencia");
-        Validacion_LogIn.innerHTML = `<p>¡El usuario no es existe!</p>`;
+        Validacion_LogIn.innerHTML = `<p>The user does not exist!</p>`;
       }
     });
 }

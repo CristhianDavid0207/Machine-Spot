@@ -46,13 +46,14 @@ function Valor_Input() {
   Password_Put.value = password_session;
 }
 
+let putConfirmacion = document.getElementById("putConfirmacion");
 function ActualizarRegistro() {
   datos_nuevos = {
     name: Name_Put.value,
     email: Email_Put.value,
     password: Password_Put.value,
   };
-
+  
   fetch(`http://localhost:3000/registrados/${id_session}`, {
     method: "PUT",
     headers: {
@@ -60,10 +61,14 @@ function ActualizarRegistro() {
     },
     body: JSON.stringify(datos_nuevos),
   })
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {});
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    putConfirmacion.innerHTML = `<p>¡Changes have been saved!</p>`;
+    console.log("LLe");
+
+  });
 }
 
 let Sure = document.getElementById("Sure");
@@ -95,3 +100,5 @@ function Eliminar() {
 
 let body_Sure = document.getElementById("body_Sure");
 body_Sure.innerHTML = `<b><h4 style="text-align: center;">${nombre_session}, Are you sure of delete you account?</h4></b>`;
+
+
