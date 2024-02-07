@@ -118,7 +118,14 @@
                     <input type="text" id="Email_Put" class="form-control mb-3" placeholder="Email">        
                     <input type="password" id="Password_Put" class="form-control mb-3" placeholder="Password">
                 </div>
-                <div id="Put_Confirmacion">Los cambios se han guardado</div>
+                 <div id="putConfirmacion">
+                    <!-- div en donde se pone la confirmacion del cambio -->
+                </div>
+                <div id="Parte_Delete">
+                    <a href="../index.html" onclick="Cerrar_sesion()" id="Close_Session">Log out</a>
+                    <br>
+                    <a href="#" onclick="Llamar_Delete()" id="Delete">Delete account</a>
+                </div>
                 <div id="Put_Parte_btn">
                     <button type="button" class="btn" id="btn_Put" onclick="ActualizarRegistro()" >Save changes</button>
                 </div>
